@@ -1,0 +1,20 @@
+.env
+output_csv
+output_excel
+InputFolder
+
+# Ignore all xlsx files
+*.xlsx
+
+# Ignore all xlsm files
+*.xlsm
+
+# Ignore all pdf files
+*.pdf
+
+# Ignore all txt files
+*.txt
+
+# Ignore all csv files
+*.csv
+
