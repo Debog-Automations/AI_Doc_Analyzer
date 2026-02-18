@@ -1,0 +1,36 @@
+# AI Document Analyzer - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# GUI Framework
+PyQt5>=5.15.0
+
+# OpenAI API Client
+openai>=1.0.0
+
+# Database (PostgreSQL)
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# PDF Processing
+PyMuPDF>=1.24.0
+
+# Excel Processing
+openpyxl>=3.1.0
+
+# Data Manipulation
+pandas>=2.0.0
+
+# Data Validation
+pydantic>=2.0.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Box.com API SDK
+box-sdk-gen>=1.0.0
+
+# AWS SDK (optional - for S3/RDS integration)
+boto3>=1.28.0
+
+# Secure Credential Storage (used by Settings tab)
+keyring>=24.0.0
