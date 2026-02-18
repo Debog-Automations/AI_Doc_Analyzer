@@ -84,14 +84,29 @@ Before setting up this project, make sure you have the following installed:
 
 ## Installation
 
-### 1. Clone the Repository
+### 1. Install Docker Desktop
+
+Docker is required to run the PostgreSQL database.
+
+1. Download Docker Desktop from [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
+2. Run the installer and follow the prompts
+3. After installation, launch Docker Desktop and wait for it to fully start (the whale icon in the system tray should stop animating)
+4. Verify the installation:
+   ```bash
+   docker --version
+   docker-compose --version
+   ```
+
+> **Note:** On Windows, Docker Desktop requires WSL 2. The installer will prompt you to enable it if needed. You may need to restart your computer after installation.
+
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/Debog-Automations/AI_Doc_Analyzer.git
 cd AI_Doc_Analyzer
 ```
 
-### 2. Create a Virtual Environment
+### 3. Create a Virtual Environment
 
 **Windows (PowerShell):**
 
@@ -107,13 +122,13 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install Python Dependencies
+### 4. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Start the PostgreSQL Database
+### 5. Start the PostgreSQL Database
 
 The project uses a Docker container for PostgreSQL. The database schema is automatically initialized on first start via `init.sql`.
 
@@ -136,7 +151,7 @@ docker ps
 
 You should see `doc_analyzer_postgres` listed and healthy.
 
-### 5. Verify Database Connection
+### 6. Verify Database Connection
 
 ```bash
 python test_db_connection.py
@@ -144,7 +159,7 @@ python test_db_connection.py
 
 You should see output confirming a successful connection and document count.
 
-### 6. Configure Environment Variables
+### 7. Configure Environment Variables
 
 Copy the example file and fill in your values:
 
