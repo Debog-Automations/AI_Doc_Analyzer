@@ -1,0 +1,171 @@
+{
+  "box_enterprise_id": "",
+  "box_user_id": "fljynfBdE8R6TliU9cGkrDJFJI3B8HQW",
+  "aws_region": "",
+  "aws_s3_bucket": "",
+  "aws_rds_host": "",
+  "output_folder": "output_csv",
+  "db_host": "localhost",
+  "db_port": 5432,
+  "db_name": "document_registry",
+  "db_user": "docanalyzer",
+  "db_password": "docanalyzer_secret",
+  "process_all_pages": true,
+  "max_vision_pages": 10,
+  "watch_folders": [
+    "/Documents"
+  ],
+  "watch_interval_minutes": 5,
+  "watch_enabled": false,
+  "watch_source_type": "box",
+  "custom_questions": [
+    {
+      "question": "What is the document title?",
+      "column_name": "Title"
+    },
+    {
+      "question": "What type of document is this? (e.g., Reinsurance Contract, MGA Agreement, Broker Agreement, Quota Share Agreement, Endorsement, Amendment, etc.)",
+      "column_name": "Type"
+    },
+    {
+      "question": "Provide a brief 2-3 sentence summary of this document, highlighting the key business terms, parties involved, and purpose.",
+      "column_name": "AI Summary"
+    },
+    {
+      "question": "What are all the 'As of', 'Data as of', or reporting dates found in this document? Include the source location for each.",
+      "column_name": "AsOfDt"
+    },
+    {
+      "question": "What are all the effective dates or inception dates when coverage or terms begin? Look for phrases like 'take effect', 'effective as of', 'commence on'. Include the source location for each.",
+      "column_name": "Effective Date"
+    },
+    {
+      "question": "When was this document executed or signed? Look for signature dates, execution dates, or date stamps near signatures.",
+      "column_name": "Executed Date"
+    },
+    {
+      "question": "When does this agreement expire, terminate, or end? Look for phrases like 'remain in effect until', 'shall expire on', 'termination date', 'expiry date', 'end date'.",
+      "column_name": "Expiration Date"
+    },
+    {
+      "question": "What is the primary currency used in this document?",
+      "column_name": "Currency"
+    },
+    {
+      "question": "What is the broker's name or brokerage firm involved in this agreement?",
+      "column_name": "Broker Name"
+    },
+    {
+      "question": "What is the carrier, insurer, or insurance company name?",
+      "column_name": "Carrier Name"
+    },
+    {
+      "question": "What is the MGA (Managing General Agent) or Managing General Underwriter name?",
+      "column_name": "MGA Name"
+    },
+    {
+      "question": "What is the intermediary's name, if any?",
+      "column_name": "Intermediary Name"
+    },
+    {
+      "question": "What is the ceded percentage, quota share percentage, or reinsurance share?",
+      "column_name": "Ceded Percent"
+    },
+    {
+      "question": "What are the commission rates or commission percentages mentioned in this document?",
+      "column_name": "Commission Rates"
+    },
+    {
+      "question": "What is the actual Gross Written Premium (GWP)? Include the amount and currency if stated.",
+      "column_name": "GWP Actual"
+    },
+    {
+      "question": "What is the estimated Gross Written Premium (GWP)? Include the amount and currency if stated.",
+      "column_name": "GWP Estimated"
+    },
+    {
+      "question": "What is the actual Net Written Premium (NWP)? Include the amount and currency if stated.",
+      "column_name": "NWP Actual"
+    },
+    {
+      "question": "What is the estimated Net Written Premium (NWP)? Include the amount and currency if stated.",
+      "column_name": "NWP Estimated"
+    },
+    {
+      "question": "What are the key entities, organizations, or companies mentioned in this document?",
+      "column_name": "Key Entities"
+    },
+    {
+      "question": "What lines of business, classes of business, or coverage types are covered in this agreement?",
+      "column_name": "Lines of Business"
+    },
+    {
+      "question": "List all parties to this agreement with their roles (e.g., Cedent, Reinsurer, Broker, Insurer, Retrocessionaire). Include every named party.",
+      "column_name": "All Parties"
+    },
+    {
+      "question": "What is the name of Party 1 (the primary or first-named party in the agreement)?",
+      "column_name": "Party 1 Name"
+    },
+    {
+      "question": "What is the name of Party 2 (the second-named party), if any?",
+      "column_name": "Party 2 Name"
+    },
+    {
+      "question": "What is the name of Party 3, if any?",
+      "column_name": "Party 3 Name"
+    },
+    {
+      "question": "What is the name of Party 4, if any?",
+      "column_name": "Party 4 Name"
+    },
+    {
+      "question": "What is the name of Party 5, if any?",
+      "column_name": "Party 5 Name"
+    },
+    {
+      "question": "What is the name of Party 6, if any?",
+      "column_name": "Party 6 Name"
+    },
+    {
+      "question": "What is the name of Party 7, if any?",
+      "column_name": "Party 7 Name"
+    },
+    {
+      "question": "What is the name of Party 8, if any?",
+      "column_name": "Party 8 Name"
+    },
+    {
+      "question": "What is the name of Party 9, if any?",
+      "column_name": "Party 9 Name"
+    },
+    {
+      "question": "What is the name of Party 10, if any?",
+      "column_name": "Party 10 Name"
+    },
+    {
+      "question": "List all sections, articles, and chapters in this document by name or number.",
+      "column_name": "Sections/Chapters"
+    },
+    {
+      "question": "List all table names, table titles, or schedule names found in this document.",
+      "column_name": "Table Names"
+    },
+    {
+      "question": "List all countries mentioned or referenced in this document.",
+      "column_name": "Countries"
+    },
+    {
+      "question": "List all states, provinces, or jurisdictions mentioned in this document.",
+      "column_name": "States"
+    },
+    {
+      "question": "Who signed this document? List the names of all signers, signatories, or authorized representatives.",
+      "column_name": "Signers"
+    },
+    {
+      "question": "List all financial values in the contract including premiums, limits, deductibles, retentions, attachment points, loss ratios, and any other monetary amounts. Include the value, currency, and what it represents.",
+      "column_name": "Financial Values"
+    }
+  ]
+}

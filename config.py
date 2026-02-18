@@ -12,6 +12,26 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL = "gpt-4o"
 
+# Database Configuration (PostgreSQL via Docker)
+DB_HOST = os.getenv("DB_HOST", "localhost")
+DB_PORT = int(os.getenv("DB_PORT", "5432"))
+DB_NAME = os.getenv("DB_NAME", "document_registry")
+DB_USER = os.getenv("DB_USER", "docanalyzer")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "docanalyzer_secret")
+
+# Database connection string
+DATABASE_URL = os.getenv(
+    "DATABASE_URL",
+    f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+)
+
+# Box API Configuration (CCG - Client Credentials Grant)
+# Credentials are stored securely via the UI settings and keyring
+BOX_CLIENT_ID = os.getenv("BOX_CLIENT_ID")
+BOX_CLIENT_SECRET = os.getenv("BOX_CLIENT_SECRET")
+BOX_ENTERPRISE_ID = os.getenv("BOX_ENTERPRISE_ID")
+BOX_USER_ID = os.getenv("BOX_USER_ID")
+
 # Output Configuration
 OUTPUT_FILE = "extracted_data.xlsx"
 

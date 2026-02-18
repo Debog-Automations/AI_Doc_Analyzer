@@ -11,6 +11,7 @@ from .pdf_extractor import (
     extract_specific_pages_as_images
 )
 from .excel_extractor import extract_excel_content
+from .metadata_extractor import MetadataExtractor, ProgrammaticFields
 
 __all__ = [
     "extract_pdf_as_images",
@@ -19,6 +20,7 @@ __all__ = [
     "analyze_pdf_pages",
     "get_pages_needing_vision",
     "extract_specific_pages_as_images",
-    "extract_excel_content"
+    "extract_excel_content",
+    "MetadataExtractor",
+    "ProgrammaticFields"
 ]
-

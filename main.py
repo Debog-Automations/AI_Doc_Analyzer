@@ -8,6 +8,13 @@ Usage:
 
 import sys
 import os
+import logging
+
+# Initialize logging before other imports
+from logger import setup_logging, get_logger
+
+setup_logging(level=logging.DEBUG)
+logger = get_logger(__name__)
 
 from extractors import (
     extract_pdf_text,
@@ -40,36 +47,41 @@ def process_file(file_path: str) -> tuple[dict, dict]:
     _, ext = os.path.splitext(file_path)
     ext = ext.lower()
     
-    print(f"Processing: {file_path}")
+    logger.info(f"Processing file: {file_path}")
     
     if ext == ".pdf":
         page_count = get_pdf_page_count(file_path)
-        print(f"  PDF has {page_count} page(s)")
+        logger.info(f"PDF has {page_count} page(s)")
         
         # Extract full text content
-        print("  Extracting text content...")
+        logger.debug("Extracting text content...")
         text_content = extract_pdf_text(file_path)
+        logger.debug(f"Extracted {len(text_content)} characters of text")
         
         # Smart detection: find pages with tables/images that need vision
-        print("  Analyzing pages for tables and images...")
+        logger.debug("Analyzing pages for tables and images...")
         vision_pages = get_pages_needing_vision(file_path, max_pages=MAX_VISION_PAGES)
         
         if vision_pages:
-            print(f"  Found {len(vision_pages)} page(s) with tables/images: {vision_pages}")
+            logger.info(f"Found {len(vision_pages)} page(s) with tables/images: {vision_pages}")
             reference_images = extract_specific_pages_as_images(file_path, vision_pages, dpi=100)
+            logger.debug(f"Extracted {len(reference_images)} page images for vision analysis")
         else:
-            print("  No tables/images detected, using text-only extraction")
+            logger.info("No tables/images detected, using text-only extraction")
             reference_images = None
         
-        print("  Sending to OpenAI for analysis...")
+        logger.info("Sending to OpenAI for analysis...")
         raw_results, sources = extract_from_pdf_hybrid(text_content, reference_images)
+        logger.debug(f"Received {len(raw_results)} fields from AI extraction")
         
     elif ext in [".xlsx", ".xlsm"]:
-        print("  Extracting Excel content...")
+        logger.debug("Extracting Excel content...")
         content = extract_excel_content(file_path)
+        logger.debug(f"Extracted Excel content: {len(content)} characters")
         
-        print("  Sending to OpenAI for analysis...")
+        logger.info("Sending to OpenAI for analysis...")
         raw_results, sources = extract_from_excel_content(content)
+        logger.debug(f"Received {len(raw_results)} fields from AI extraction")
         
     else:
         raise ValueError(f"Unsupported file type: {ext}. Supported types: .pdf, .xlsx, .xlsm")
@@ -82,17 +94,20 @@ def process_file(file_path: str) -> tuple[dict, dict]:
 
 def main():
     """Main entry point."""
+    logger.info("=" * 60)
+    logger.info("AI Document Data Extractor - CLI Mode")
+    logger.info("=" * 60)
 
     try:
         if len(sys.argv) < 2:
-            print("Usage: python main.py <file_path>")
-            print("  Supported file types: .pdf, .xlsx, .xlsm")
+            logger.warning("Usage: python main.py <file_path>")
+            logger.info("Supported file types: .pdf, .xlsx, .xlsm")
         
         file_path = sys.argv[1]
     except IndexError:
-        print("No file path provided")
+        logger.warning("No file path provided")
         file_path = "InputFolder/MGA Agreement - Bridger - eff. 2022-08-01.pdf"
-        print(f"Using default file path: {file_path}")
+        logger.info(f"Using default file path: {file_path}")
 
     
     file_paths = [
@@ -111,34 +126,33 @@ def main():
             # Process the file
             extracted_data, sources = process_file(file_path)
             
-            # Print summary to console
-            print("\n" + get_extraction_summary(extracted_data))
+            # Log summary
+            summary = get_extraction_summary(extracted_data)
+            logger.info(f"\n{summary}")
             
             # Log sources for debugging
-            print("\n  Sources (where information was found):")
+            logger.debug("Sources (where information was found):")
             for field, source in sources.items():
-                print(f"    {field}: {source}")
+                logger.debug(f"  {field}: {source}")
             
             # Write to Excel (append to master file)
             filename = os.path.basename(file_path)
             excel_path = write_to_excel(filename, extracted_data, source_path=file_path)
-            print(f"\nAppended to Excel: {excel_path}")
+            logger.info(f"Appended to Excel: {excel_path}")
             
             # Write to timestamped CSV (one per run)
             csv_path = write_to_csv(filename, extracted_data, source_path=file_path)
-            print(f"Saved individual CSV: {csv_path}")
+            logger.info(f"Saved individual CSV: {csv_path}")
             
         except FileNotFoundError as e:
-            print(f"Error: {e}")
-            # sys.exit(1)
+            logger.error(f"File not found: {e}")
         except ValueError as e:
-            print(f"Error: {e}")
-            # sys.exit(1)
+            logger.error(f"Validation error: {e}")
         except Exception as e:
-            print(f"An error occurred: {e}")
-            # sys.exit(1)
+            logger.exception(f"An error occurred processing {file_path}: {e}")
+
+    logger.info("Processing complete")
 
 
 if __name__ == "__main__":
     main()
-

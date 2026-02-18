@@ -18,3 +18,14 @@ InputFolder
 # Ignore all csv files
 *.csv
 
+# Ignore all __pycache__ files
+__pycache__/
+
+# Ignore all .gitignore files
+.gitignore
+
+# Ignore all .env files
+.env
+
+# Ignore all .env.local files
+.env.local  

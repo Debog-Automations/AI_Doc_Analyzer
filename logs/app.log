@@ -1,0 +1,738 @@
+2025-12-21 14:36:27 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-21 14:36:27 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-21 14:36:27 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-21 14:36:27 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-21 14:36:27 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-21 14:37:09 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-21 14:37:10 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-21 14:37:10 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-21 14:37:13 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-21 14:37:13 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 06:01:22 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 06:01:22 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 06:01:22 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 06:01:22 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 06:01:22 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 06:02:00 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 06:02:01 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 06:02:01 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 06:02:03 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 06:02:03 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 06:04:57 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2025-12-22 06:04:57.581158
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2025-12-22 06:08:01 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 06:08:01 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 06:08:01 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 06:08:01 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 06:08:01 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 06:12:13 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 06:12:13 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 06:12:13 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 06:12:13 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 06:12:13 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 06:12:25 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 06:12:25 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 06:12:25 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 06:12:26 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 06:12:26 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 06:14:52 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 06:14:52 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 06:14:52 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 06:15:40 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 07:16:54 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 07:17:53 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 07:17:53 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 07:17:53 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 07:17:53 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 07:17:53 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 07:18:05 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 07:18:05 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 07:18:05 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 07:18:07 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 07:18:07 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 07:19:42 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 07:19:42 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 07:19:44 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 07:24:02 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 07:24:02 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 07:24:02 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 07:24:02 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 07:24:02 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 07:24:11 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 07:24:11 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 07:24:11 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 07:24:12 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 07:24:12 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 07:25:11 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2025-12-22 07:25:11.209615
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2025-12-22 07:26:29 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 07:26:29 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 07:26:32 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 07:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 07:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 07:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 07:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 07:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 07:32:29 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 07:32:29 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 07:32:29 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 07:32:29 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 07:32:29 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 07:34:19 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 07:34:19 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 07:34:19 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 07:34:19 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 07:34:19 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 07:34:28 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 07:38:18 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 07:38:18 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 07:38:18 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 07:38:18 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 07:38:18 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 07:38:27 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 07:38:27 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 07:38:27 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 07:38:28 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 07:38:28 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 07:38:38 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 07:38:38 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 07:38:38 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 09:12:21 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 10:43:33 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:08:57 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 11:08:57 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 11:08:57 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 11:08:57 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 11:08:57 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 11:09:07 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 11:09:07 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 11:09:07 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 11:09:09 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 11:09:09 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 11:09:42 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 11:09:43 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 11:09:43 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 11:11:57 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:20:36 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 11:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 11:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 11:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 11:30:26 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 11:30:51 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 11:30:51 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 11:30:51 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 11:30:51 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 11:30:51 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 11:31:06 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 11:31:06 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 11:31:06 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 11:31:07 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 11:31:07 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 11:31:14 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 11:31:14 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 11:31:14 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 11:31:32 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:35:46 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2025-12-22 11:35:46 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2025-12-22 11:35:46 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2025-12-22 11:35:46 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2025-12-22 11:35:46 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2025-12-22 11:35:56 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2025-12-22 11:35:56 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2025-12-22 11:35:56 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2025-12-22 11:35:57 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2025-12-22 11:35:57 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2025-12-22 11:36:19 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2025-12-22 11:36:20 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2025-12-22 11:36:20 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2025-12-22 11:36:42 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:39:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:40:24 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:41:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:41:29 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:42:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:44:04 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:44:39 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2025-12-22 11:45:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2026-01-01 21:08:22 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-01 21:08:22 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-01 21:08:22 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-01 21:08:22 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-01 21:08:22 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-01 21:09:00 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-01-01 21:09:01 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-01-01 21:09:01 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-01-01 21:09:03 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-01-01 21:09:03 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-01-02 07:56:15 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 07:56:15 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 07:56:15 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 07:56:15 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 07:56:15 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 08:00:44 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 08:00:44 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 08:00:44 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 08:00:44 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 08:00:44 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 08:39:47 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 08:39:47 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 08:39:47 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 08:39:47 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 08:39:47 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 08:44:21 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 08:44:21 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 08:44:21 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 08:44:21 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 08:44:21 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 08:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 08:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 08:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 08:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 08:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 08:47:14 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 08:47:14 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 08:47:14 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 08:47:14 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 08:47:14 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 08:47:18 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2026-01-02 09:27:41 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 09:27:41 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 09:27:41 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 09:27:41 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 09:27:41 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 09:27:44 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:71 | Extracting with universal schema...
+2026-01-02 09:44:14 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 09:44:14 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 09:44:14 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 09:44:14 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 09:44:14 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 09:44:23 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:320 | Extracting with universal schema...
+2026-01-02 09:51:31 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 09:51:31 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 09:51:31 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 09:51:31 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 09:51:31 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 10:04:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:320 | Extracting with universal schema...
+2026-01-02 10:19:57 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 10:19:57 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 10:19:57 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 10:19:57 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 10:19:57 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 10:20:07 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-01-02 10:20:07 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-01-02 10:20:07 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-01-02 10:20:09 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-01-02 10:20:09 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-01-02 10:37:24 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-01-02 10:37:24 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2026-01-02 10:37:24 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2026-01-02 10:37:45 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2026-01-02 10:37:45 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 8 files in path: /
+2026-01-02 10:38:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:38:45 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Retrying for 15 missing fields...
+2026-01-02 10:39:00 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:560 | Processing all 1 pages as images
+2026-01-02 10:39:00 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:39:09 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:560 | Processing all 2 pages as images
+2026-01-02 10:39:09 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:39:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Retrying for 13 missing fields...
+2026-01-02 10:39:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:560 | Processing all 17 pages as images
+2026-01-02 10:39:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:40:19 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Retrying for 14 missing fields...
+2026-01-02 10:40:26 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:560 | Processing all 3 pages as images
+2026-01-02 10:40:26 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:40:40 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Retrying for 14 missing fields...
+2026-01-02 10:40:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:560 | Processing all 3 pages as images
+2026-01-02 10:40:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:41:04 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Retrying for 16 missing fields...
+2026-01-02 10:41:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:560 | Processing all 43 pages as images
+2026-01-02 10:41:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 29 custom questions...
+2026-01-02 10:42:52 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Retrying for 6 missing fields...
+2026-01-02 11:04:57 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 11:04:57 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 11:04:57 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 11:04:57 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 11:04:57 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 11:05:14 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-01-02 11:05:14 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-01-02 11:05:14 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-01-02 11:05:16 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-01-02 11:05:16 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-01-02 11:07:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-01-02 11:07:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 24 custom questions...
+2026-01-02 11:08:07 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 11 missing fields...
+2026-01-02 11:20:39 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 11:20:40 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 11:20:40 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 11:20:40 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 11:20:40 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 11:20:53 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-01-02 11:20:53 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-01-02 11:20:53 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-01-02 11:20:55 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-01-02 11:20:55 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-01-02 11:48:24 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-01-02 11:48:24 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-01-02 11:48:24 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-01-02 11:48:24 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-01-02 11:48:24 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-01-02 23:57:22 | INFO     | AI_Doc_Analyzer.__main__:main:60 | Application exited with code: 0
+2026-02-08 23:50:46 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-08 23:50:46 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-08 23:50:46 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-08 23:50:46 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-08 23:50:46 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-08 23:51:38 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-08 23:51:38 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-08 23:51:38 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-08 23:51:41 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-08 23:51:41 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-09 10:35:39 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-09 10:35:39.781279
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-09 10:37:22 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-09 10:37:23 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /
+2026-02-09 10:38:07 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-09 10:38:07 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 1 folders in path: /
+2026-02-09 10:38:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-09 10:38:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-09 10:38:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 1 files in path: /Documents
+2026-02-09 10:38:37 | INFO     | AI_Doc_Analyzer.__main__:main:60 | Application exited with code: 0
+2026-02-09 10:38:48 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-09 10:38:48 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-09 10:38:48 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-09 10:38:48 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-09 10:38:48 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-09 10:39:27 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-09 10:39:27 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-09 10:39:27 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-09 10:39:29 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-09 10:39:29 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-09 10:44:07 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-09 10:44:07 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-09 10:44:07 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-09 10:44:07 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-09 10:44:07 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-09 10:44:21 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-09 10:44:21 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-09 10:44:21 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-09 10:44:22 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-09 10:44:22 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-09 10:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-09 10:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-09 10:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-09 10:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-09 10:46:28 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-09 10:46:38 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-09 10:46:38 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-09 10:46:38 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-09 10:46:39 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-09 10:46:39 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-09 10:46:56 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-09 10:46:56 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 1 folders in path: /
+2026-02-09 10:47:03 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-09 10:47:04 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-09 10:47:04 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 1 files in path: /Documents
+2026-02-09 10:47:10 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 1 pages as images
+2026-02-09 10:47:10 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 24 custom questions...
+2026-02-09 11:05:46 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-09 11:05:46 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-09 11:05:46 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-09 11:05:46 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-09 11:05:46 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-09 11:05:59 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-09 11:05:59 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-09 11:05:59 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-09 11:06:01 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-09 11:06:01 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-09 11:06:14 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-09 11:06:15 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-09 11:06:15 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 2 files in path: /Documents
+2026-02-09 11:08:06 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-09 11:08:06 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 24 custom questions...
+2026-02-12 15:04:21 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:04:21 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:04:21 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:04:21 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:04:21 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:09:46 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:09:46 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:09:46 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:09:46 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:09:46 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:10:34 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-12 15:10:34 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-12 15:10:34 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-12 15:10:36 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-12 15:10:36 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-12 15:11:17 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:11:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 1 folders in path: /
+2026-02-12 15:11:21 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:11:22 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 15:11:22 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 2 files in path: /Documents
+2026-02-12 15:11:45 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 15:11:45 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 24 custom questions...
+2026-02-12 15:12:40 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 7 missing fields...
+2026-02-12 15:13:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 1 pages as images
+2026-02-12 15:13:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 24 custom questions...
+2026-02-12 15:16:21 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:16:22 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 15:16:22 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 2 files in path: /Documents
+2026-02-12 15:18:00 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:18:00 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:18:00 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:18:00 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:18:00 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:18:05 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:378 | Extracting with universal schema...
+2026-02-12 15:18:18 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:18:18 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:18:18 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:18:18 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:18:18 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:19:03 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:19:03 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:19:03 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:19:03 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:19:03 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:19:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract:378 | Extracting with universal schema...
+2026-02-12 15:20:06 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:20:06 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:20:06 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:20:06 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:20:06 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:20:20 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-12 15:20:20 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-12 15:20:20 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-12 15:20:21 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-12 15:20:21 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-12 15:46:39 | INFO     | AI_Doc_Analyzer.__main__:main:60 | Application exited with code: 0
+2026-02-12 15:46:46 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-02-12 15:46:47 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-02-12 15:46:47 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-02-12 15:46:47 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: c:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-02-12 15:46:47 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-02-12 15:47:00 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-02-12 15:47:00 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-02-12 15:47:00 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-02-12 15:47:01 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-02-12 15:47:01 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-02-12 15:48:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:48:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 15:48:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 2 files in path: /Documents
+2026-02-12 15:48:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 15:48:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 15:48:53 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 15:49:17 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 15:49:17 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 15:50:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 15:53:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:53:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 15:53:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 2 files in path: /Documents
+2026-02-12 15:53:20 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 15:53:20 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 15:53:35 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 15:53:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 15:53:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 15:54:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 11 missing fields...
+2026-02-12 15:57:11 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:57:11 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 1 folders in path: /
+2026-02-12 15:57:12 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 4 files in path: /
+2026-02-12 15:57:15 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 15:57:15 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 15:58:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 15:58:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 15:58:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 15:58:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 15:58:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 15:59:04 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 15:59:16 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 15:59:16 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 15:59:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:00:04 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:00:04 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:00:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 16:03:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:03:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:03:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:03:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:03:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:04:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:04:21 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:04:21 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:04:39 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:05:00 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:05:00 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:05:49 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 16:08:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:08:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:08:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:08:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:08:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:09:05 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:09:20 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:09:20 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:09:39 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:10:00 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:10:00 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:10:54 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 13 missing fields...
+2026-02-12 16:13:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:13:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:13:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:13:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:13:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:14:06 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:14:19 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:14:19 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:14:39 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:15:05 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:15:05 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:15:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 16:18:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:18:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:18:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:18:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:18:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:19:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:19:43 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:19:43 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:19:57 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:20:18 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:20:18 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:21:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 16:23:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:23:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:23:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:23:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:23:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:24:12 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:24:25 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:24:25 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:24:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:25:03 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:25:03 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:25:59 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 16:28:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:28:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:28:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:28:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:28:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:28:56 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:29:07 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:29:07 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:29:25 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:29:47 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:29:47 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:30:45 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 11 missing fields...
+2026-02-12 16:33:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:33:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:33:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:33:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:33:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:33:59 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:34:11 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:34:11 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:34:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:34:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:34:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:35:39 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 13 missing fields...
+2026-02-12 16:38:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:38:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:38:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:38:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:38:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:39:04 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:39:16 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:39:16 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:39:36 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:39:59 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:39:59 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:40:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 14 missing fields...
+2026-02-12 16:43:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:43:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:43:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:43:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:43:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:43:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:44:11 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:44:11 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:44:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:44:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:44:50 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:45:46 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 11 missing fields...
+2026-02-12 16:48:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:48:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:48:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:48:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:48:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:49:01 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:49:15 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:49:15 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:49:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:49:51 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:49:51 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:50:47 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 12 missing fields...
+2026-02-12 16:53:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:53:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:53:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:53:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:53:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:53:59 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:54:14 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:54:14 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:54:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 16:54:52 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 16:54:52 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:55:46 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 13 missing fields...
+2026-02-12 16:58:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 16:58:18 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 16:58:18 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 16:58:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 16:58:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:59:13 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 16:59:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 16:59:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 16:59:46 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 17:00:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 17:00:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:01:08 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 14 missing fields...
+2026-02-12 17:03:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 17:03:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 17:03:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 17:03:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 17:03:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:04:06 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 17:04:22 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 17:04:22 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:04:48 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 17:05:11 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 17:05:11 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:06:05 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 14 missing fields...
+2026-02-12 17:08:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 17:08:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 17:08:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 17:08:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 17:08:31 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:09:03 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 19 missing fields...
+2026-02-12 17:09:15 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 17:09:15 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:09:32 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 17:09:55 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 17:09:55 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:10:56 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 13 missing fields...
+2026-02-12 17:13:16 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-02-12 17:13:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-02-12 17:13:17 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-02-12 17:13:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 17 pages as images
+2026-02-12 17:13:30 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:13:59 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 20 missing fields...
+2026-02-12 17:14:10 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 3 pages as images
+2026-02-12 17:14:10 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:14:23 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 21 missing fields...
+2026-02-12 17:14:46 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:618 | Processing all 54 pages as images
+2026-02-12 17:14:46 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:125 | Extracting with 37 custom questions...
+2026-02-12 17:15:47 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:150 | Following up for 14 missing fields...
+2026-02-12 17:18:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:18:16.687570
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:23:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:23:16.808631
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:28:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:28:16.677009
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:33:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:33:16.809018
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:38:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:38:16.716725
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:43:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:43:16.801450
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:48:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:48:16.694529
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:53:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:53:16.826080
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 17:58:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 17:58:16.666700
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:03:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:03:16.802777
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:08:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:08:16.789742
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:13:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:13:16.869524
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:18:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:18:16.873940
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:23:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:23:16.806109
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:28:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:28:16.863989
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:33:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:33:16.818063
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:38:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:38:16.876741
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:43:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:43:16.856197
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:48:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:48:16.696336
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:53:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:53:16.803279
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 18:58:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 18:58:16.750947
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 19:03:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 19:03:16.806969
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 19:08:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 19:08:16.840661
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 19:13:16 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 19:13:16.768902
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
+2026-02-12 21:13:40 | ERROR    | AI_Doc_Analyzer.connectors.box_connector:connect:77 | Box connection failed: 
+Timestamp: 2026-02-12 21:13:40.627538
+Underlying error: None
+Message: Developer token has expired. Please provide a new one.
