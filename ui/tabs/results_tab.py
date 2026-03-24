@@ -159,6 +159,15 @@ class ResultsTab(QWidget):
         self.refresh_btn.setMaximumWidth(80)
         self.refresh_btn.clicked.connect(self.load_from_database)
         top_controls.addWidget(self.refresh_btn)
+
+        # Delete selected button
+        self.delete_btn = QPushButton("Delete Selected")
+        self.delete_btn.setMaximumWidth(120)
+        self.delete_btn.setEnabled(False)
+        self.delete_btn.setToolTip("Delete selected rows from the database")
+        self.delete_btn.setStyleSheet("QPushButton { color: #dc3545; } QPushButton:disabled { color: #aaa; }")
+        self.delete_btn.clicked.connect(self._delete_selected)
+        top_controls.addWidget(self.delete_btn)
         
         # Filter
         top_controls.addWidget(QLabel("Filter:"))
@@ -213,6 +222,7 @@ class ResultsTab(QWidget):
                 font-weight: bold;
             }
         """)
+        self.table.itemSelectionChanged.connect(self._on_selection_changed)
         layout.addWidget(self.table, 1)
         
         # === Pagination Controls ===
@@ -560,6 +570,69 @@ class ResultsTab(QWidget):
                         break
             self.table.setRowHidden(row, not show)
     
+    def _on_selection_changed(self):
+        """Enable delete button when rows are selected."""
+        self.delete_btn.setEnabled(bool(self.table.selectedItems()))
+
+    def _delete_selected(self):
+        """Delete selected rows from the database."""
+        selected_rows = sorted(set(idx.row() for idx in self.table.selectedIndexes()))
+        if not selected_rows:
+            return
+
+        confirm = QMessageBox.question(
+            self, "Confirm Delete",
+            f"Delete {len(selected_rows)} selected record(s) from the database?\nThis cannot be undone.",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        if confirm != QMessageBox.Yes:
+            return
+
+        if self.dedup_service is None:
+            QMessageBox.warning(self, "Error", "Database connection unavailable.")
+            return
+
+        # Find file_hash column index
+        hash_col = None
+        for col in range(self.table.columnCount()):
+            header = self.table.horizontalHeaderItem(col)
+            if header and header.text() in ("file_hash", "File Hash"):
+                hash_col = col
+                break
+
+        deleted = 0
+        errors = []
+        for row in selected_rows:
+            file_hash = ""
+            if hash_col is not None:
+                item = self.table.item(row, hash_col)
+                if item:
+                    file_hash = item.text().strip()
+
+            if not file_hash:
+                # Fall back to matching by row data
+                errors.append(f"Row {row + 1}: no file hash found")
+                continue
+
+            try:
+                if self.dedup_service.delete_document(file_hash):
+                    deleted += 1
+                    self.session_hashes.discard(file_hash)
+                else:
+                    errors.append(f"Row {row + 1}: record not found")
+            except Exception as e:
+                errors.append(f"Row {row + 1}: {e}")
+
+        # Reload
+        self.current_page = 1
+        self.load_from_database()
+
+        msg = f"Deleted {deleted} record(s)."
+        if errors:
+            msg += "\n\nWarnings:\n" + "\n".join(errors)
+        QMessageBox.information(self, "Delete Complete", msg)
+
     def add_result(self, file_path: str, data: Dict[str, Any]):
         """Add a single result to the table (and track for session filter)."""
         # Track session hash
