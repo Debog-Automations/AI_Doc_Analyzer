@@ -270,37 +270,40 @@ class MainWindow(QMainWindow):
         
         # AI Extraction (Phase 5)
         try:
-            # Get API key from settings
-            api_key = self.settings_tab.get_openai_key()
-            if not api_key:
-                # Try environment variable
-                api_key = os.getenv("OPENAI_API_KEY")
-            
+            # Get provider and API key from settings
+            provider = self.settings_tab.get_ai_provider()
+            if provider == "anthropic":
+                api_key = self.settings_tab.get_anthropic_key() or os.getenv("ANTHROPIC_API_KEY")
+            else:
+                api_key = self.settings_tab.get_openai_key() or os.getenv("OPENAI_API_KEY")
+
             if api_key:
                 # Get custom questions from Questions tab
                 questions = self.questions_tab.get_questions()
-                
+
                 if questions:
                     # Use custom questions for extraction
                     ai_result, ai_metadata = extract_document(
-                        file_path, 
+                        file_path,
                         api_key=api_key,
-                        questions=questions
+                        questions=questions,
+                        provider=provider
                     )
                 else:
                     # Fallback to legacy extraction if no questions defined
-                    ai_result, ai_metadata = extract_document(file_path, api_key=api_key)
-                
+                    ai_result, ai_metadata = extract_document(file_path, api_key=api_key, provider=provider)
+
                 # Merge AI results with programmatic fields
                 result.update(ai_result)
                 result['Status'] = "Success"
                 result['_ai_retries'] = ai_metadata.get('retries', 0)
                 result['_ai_missing'] = ', '.join(ai_metadata.get('final_missing', []))
             else:
+                provider_label = "Anthropic" if provider == "anthropic" else "OpenAI"
                 result['Status'] = "Partial (No API Key)"
-                result['Title'] = "(Configure OpenAI API key in Settings)"
-                result['Type'] = "(Configure OpenAI API key in Settings)"
-                result['AI Summary'] = "(OpenAI API key required for AI extraction)"
+                result['Title'] = f"(Configure {provider_label} API key in Settings)"
+                result['Type'] = f"(Configure {provider_label} API key in Settings)"
+                result['AI Summary'] = f"({provider_label} API key required for AI extraction)"
                 
         except Exception as e:
             result['Status'] = f"Error: {str(e)[:50]}"

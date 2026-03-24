@@ -4,8 +4,9 @@
 # GUI Framework
 PyQt5>=5.15.0
 
-# OpenAI API Client
+# AI API Clients
 openai>=1.0.0
+anthropic>=0.20.0
 
 # Database (PostgreSQL)
 SQLAlchemy>=2.0.0

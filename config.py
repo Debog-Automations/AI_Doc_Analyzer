@@ -8,9 +8,16 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
+# AI Provider Configuration
+AI_PROVIDER = os.getenv("AI_PROVIDER", "openai")  # "openai" or "anthropic"
+
 # OpenAI Configuration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL = "gpt-4o"
+
+# Anthropic Configuration
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+ANTHROPIC_MODEL = "claude-sonnet-4-6"
 
 # Database Configuration (PostgreSQL via Docker)
 DB_HOST = os.getenv("DB_HOST", "localhost")

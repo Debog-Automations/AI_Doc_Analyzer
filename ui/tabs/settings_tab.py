@@ -3,9 +3,9 @@ Settings Tab - Manage credentials and application settings
 """
 
 from PyQt5.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QGroupBox, QLabel, 
+    QWidget, QVBoxLayout, QHBoxLayout, QGroupBox, QLabel,
     QLineEdit, QPushButton, QFormLayout, QMessageBox, QCheckBox,
-    QScrollArea, QFrame, QSpinBox
+    QScrollArea, QFrame, QSpinBox, QRadioButton, QButtonGroup
 )
 from PyQt5.QtCore import pyqtSignal, Qt
 import keyring
@@ -51,15 +51,31 @@ class SettingsTab(QWidget):
         layout.setSpacing(20)
         layout.setContentsMargins(10, 10, 10, 10)
         
+        # AI Provider Selection
+        provider_group = QGroupBox("AI Provider")
+        provider_layout = QVBoxLayout()
+
+        self.provider_button_group = QButtonGroup(self)
+        self.openai_radio = QRadioButton("OpenAI (GPT-4o)")
+        self.anthropic_radio = QRadioButton("Anthropic (Claude)")
+        self.provider_button_group.addButton(self.openai_radio)
+        self.provider_button_group.addButton(self.anthropic_radio)
+        self.openai_radio.setChecked(True)
+
+        provider_layout.addWidget(self.openai_radio)
+        provider_layout.addWidget(self.anthropic_radio)
+        provider_group.setLayout(provider_layout)
+        layout.addWidget(provider_group)
+
         # OpenAI Settings
         openai_group = QGroupBox("OpenAI Settings")
         openai_layout = QFormLayout()
-        
+
         self.openai_key_input = QLineEdit()
         self.openai_key_input.setEchoMode(QLineEdit.Password)
         self.openai_key_input.setPlaceholderText("sk-...")
         openai_layout.addRow("API Key:", self.openai_key_input)
-        
+
         self.openai_show_key = QCheckBox("Show Key")
         self.openai_show_key.toggled.connect(
             lambda checked: self.openai_key_input.setEchoMode(
@@ -67,9 +83,29 @@ class SettingsTab(QWidget):
             )
         )
         openai_layout.addRow("", self.openai_show_key)
-        
+
         openai_group.setLayout(openai_layout)
         layout.addWidget(openai_group)
+
+        # Anthropic Settings
+        anthropic_group = QGroupBox("Anthropic Settings")
+        anthropic_layout = QFormLayout()
+
+        self.anthropic_key_input = QLineEdit()
+        self.anthropic_key_input.setEchoMode(QLineEdit.Password)
+        self.anthropic_key_input.setPlaceholderText("sk-ant-...")
+        anthropic_layout.addRow("API Key:", self.anthropic_key_input)
+
+        self.anthropic_show_key = QCheckBox("Show Key")
+        self.anthropic_show_key.toggled.connect(
+            lambda checked: self.anthropic_key_input.setEchoMode(
+                QLineEdit.Normal if checked else QLineEdit.Password
+            )
+        )
+        anthropic_layout.addRow("", self.anthropic_show_key)
+
+        anthropic_group.setLayout(anthropic_layout)
+        layout.addWidget(anthropic_group)
         
         # Box Settings - Developer Token (Quick Testing)
         box_dev_group = QGroupBox("Box API - Developer Token (Quick Testing)")
@@ -301,10 +337,22 @@ class SettingsTab(QWidget):
     def _load_credentials(self):
         """Load credentials from keyring."""
         try:
+            # AI Provider selection
+            ai_provider = self.config.get("ai_provider", "openai")
+            if ai_provider == "anthropic":
+                self.anthropic_radio.setChecked(True)
+            else:
+                self.openai_radio.setChecked(True)
+
             # OpenAI
             openai_key = keyring.get_password(KEYRING_SERVICE, "openai_api_key")
             if openai_key:
                 self.openai_key_input.setText(openai_key)
+
+            # Anthropic
+            anthropic_key = keyring.get_password(KEYRING_SERVICE, "anthropic_api_key")
+            if anthropic_key:
+                self.anthropic_key_input.setText(anthropic_key)
             
             # Box Developer Token
             box_developer_token = keyring.get_password(KEYRING_SERVICE, "box_developer_token")
@@ -351,10 +399,17 @@ class SettingsTab(QWidget):
     def _save_settings(self):
         """Save all settings to keyring and config file."""
         try:
+            # Save AI provider selection
+            self.config["ai_provider"] = "anthropic" if self.anthropic_radio.isChecked() else "openai"
+
             # Save to keyring (sensitive data)
             if self.openai_key_input.text():
-                keyring.set_password(KEYRING_SERVICE, "openai_api_key", 
+                keyring.set_password(KEYRING_SERVICE, "openai_api_key",
                                     self.openai_key_input.text())
+
+            if self.anthropic_key_input.text():
+                keyring.set_password(KEYRING_SERVICE, "anthropic_api_key",
+                                    self.anthropic_key_input.text())
             
             # Box Developer Token (sensitive)
             if self.box_developer_token_input.text():
@@ -408,7 +463,7 @@ class SettingsTab(QWidget):
     def _test_connections(self):
         """Test API connections."""
         results = []
-        
+
         # Test OpenAI
         if self.openai_key_input.text():
             try:
@@ -420,6 +475,18 @@ class SettingsTab(QWidget):
                 results.append(f"[FAIL] OpenAI: {str(e)[:50]}")
         else:
             results.append("[--] OpenAI: No API key configured")
+
+        # Test Anthropic
+        if self.anthropic_key_input.text():
+            try:
+                import anthropic
+                client = anthropic.Anthropic(api_key=self.anthropic_key_input.text())
+                client.models.list()
+                results.append("[OK] Anthropic: Connected")
+            except Exception as e:
+                results.append(f"[FAIL] Anthropic: {str(e)[:50]}")
+        else:
+            results.append("[--] Anthropic: No API key configured")
         
         # Test Box connection (Developer Token takes priority)
         box_developer_token = self.box_developer_token_input.text()
@@ -464,6 +531,14 @@ class SettingsTab(QWidget):
     def get_openai_key(self) -> str:
         """Get the OpenAI API key."""
         return self.openai_key_input.text()
+
+    def get_anthropic_key(self) -> str:
+        """Get the Anthropic API key."""
+        return self.anthropic_key_input.text()
+
+    def get_ai_provider(self) -> str:
+        """Get the selected AI provider ('openai' or 'anthropic')."""
+        return "anthropic" if self.anthropic_radio.isChecked() else "openai"
     
     def get_box_credentials(self) -> dict:
         """

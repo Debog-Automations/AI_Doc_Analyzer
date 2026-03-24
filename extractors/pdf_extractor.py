@@ -79,17 +79,17 @@ def extract_pdf_as_images(pdf_path: str, dpi: int = 150, max_pages: int = None) 
         
         # Get pixmap (image) of the page
         pixmap = page.get_pixmap(matrix=matrix)
-        
-        # Convert to PNG bytes
-        png_bytes = pixmap.tobytes("png")
-        
+
+        # Convert to JPEG (much smaller than PNG; quality=85 is fine for OCR/extraction)
+        img_bytes = pixmap.tobytes("jpeg", jpg_quality=85)
+
         # Encode to base64
-        base64_image = base64.b64encode(png_bytes).decode("utf-8")
-        
+        base64_image = base64.b64encode(img_bytes).decode("utf-8")
+
         images.append({
             "page_number": page_num + 1,
             "base64_image": base64_image,
-            "mime_type": "image/png"
+            "mime_type": "image/jpeg"
         })
     
     doc.close()
@@ -208,13 +208,13 @@ def extract_specific_pages_as_images(pdf_path: str, page_numbers: list[int], dpi
         matrix = fitz.Matrix(zoom, zoom)
         
         pixmap = page.get_pixmap(matrix=matrix)
-        png_bytes = pixmap.tobytes("png")
-        base64_image = base64.b64encode(png_bytes).decode("utf-8")
-        
+        img_bytes = pixmap.tobytes("jpeg", jpg_quality=85)
+        base64_image = base64.b64encode(img_bytes).decode("utf-8")
+
         images.append({
             "page_number": page_num,
             "base64_image": base64_image,
-            "mime_type": "image/png"
+            "mime_type": "image/jpeg"
         })
     
     doc.close()

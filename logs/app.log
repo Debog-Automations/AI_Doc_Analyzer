@@ -736,3 +736,64 @@ Message: Developer token has expired. Please provide a new one.
 Timestamp: 2026-02-12 21:13:40.627538
 Underlying error: None
 Message: Developer token has expired. Please provide a new one.
+2026-03-24 10:10:00 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-03-24 10:10:00 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-03-24 10:10:00 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-03-24 10:10:00 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-03-24 10:10:00 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-03-24 10:11:43 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-03-24 10:11:43 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-03-24 10:11:43 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-03-24 10:11:43 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-03-24 10:11:43 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-03-24 10:11:52 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-03-24 10:11:52 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-03-24 10:11:52 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-03-24 10:11:55 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-03-24 10:11:55 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-03-24 10:17:00 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-03-24 10:17:00 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-03-24 10:17:00 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-03-24 10:17:00 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-03-24 10:17:00 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-03-24 10:17:05 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-03-24 10:17:05 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-03-24 10:17:05 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-03-24 10:17:07 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-03-24 10:17:07 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-03-24 10:21:26 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-03-24 10:21:26 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 1 folders in path: /
+2026-03-24 10:21:26 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 4 files in path: /
+2026-03-24 10:21:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:688 | Processing all 2 pages as images
+2026-03-24 10:21:41 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:147 | Extracting with 37 custom questions...
+2026-03-24 10:21:58 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:172 | Following up for 17 missing fields...
+2026-03-24 10:24:38 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-03-24 10:24:39 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-03-24 10:24:53 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:688 | Processing all 2 pages as images
+2026-03-24 10:24:53 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:147 | Extracting with 37 custom questions...
+2026-03-24 10:25:10 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:172 | Following up for 18 missing fields...
+2026-03-24 10:25:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:688 | Processing all 54 pages as images
+2026-03-24 10:25:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:147 | Extracting with 37 custom questions...
+2026-03-24 10:30:44 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-03-24 10:30:44 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-03-24 10:30:44 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-03-24 10:30:44 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-03-24 10:30:44 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-03-24 10:32:41 | INFO     | AI_Doc_Analyzer:setup_logging:147 | ============================================================
+2026-03-24 10:32:41 | INFO     | AI_Doc_Analyzer:setup_logging:148 | AI Document Analyzer - Logging initialized
+2026-03-24 10:32:41 | INFO     | AI_Doc_Analyzer:setup_logging:149 | Log level: DEBUG
+2026-03-24 10:32:41 | INFO     | AI_Doc_Analyzer:setup_logging:150 | Log file: C:\Users\bogda\DebogAutomations\Clients\RobertKaplan\AI_Doc_Analyzer\logs\app.log
+2026-03-24 10:32:41 | INFO     | AI_Doc_Analyzer:setup_logging:151 | ============================================================
+2026-03-24 10:32:45 | INFO     | AI_Doc_Analyzer.__main__:main:33 | Starting AI Document Analyzer application
+2026-03-24 10:32:45 | DEBUG    | AI_Doc_Analyzer.__main__:main:45 | QApplication created successfully
+2026-03-24 10:32:45 | DEBUG    | AI_Doc_Analyzer.__main__:main:52 | Creating main window
+2026-03-24 10:32:46 | INFO     | AI_Doc_Analyzer.__main__:main:55 | Main window displayed
+2026-03-24 10:32:46 | INFO     | AI_Doc_Analyzer.__main__:main:58 | Entering application event loop
+2026-03-24 10:33:02 | INFO     | AI_Doc_Analyzer.connectors.box_connector:connect:74 | Box connection established successfully
+2026-03-24 10:33:02 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 1 folders in path: /
+2026-03-24 10:33:03 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 4 files in path: /
+2026-03-24 10:33:05 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_folders:120 | Listed 0 folders in path: /Documents
+2026-03-24 10:33:06 | DEBUG    | AI_Doc_Analyzer.connectors.box_connector:list_files:189 | Listed 3 files in path: /Documents
+2026-03-24 10:33:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_document:705 | Processing all 54 pages as images
+2026-03-24 10:33:27 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:147 | Extracting with 37 custom questions...
+2026-03-24 10:34:24 | INFO     | AI_Doc_Analyzer.services.ai_extractor:extract_with_questions:172 | Following up for 10 missing fields...

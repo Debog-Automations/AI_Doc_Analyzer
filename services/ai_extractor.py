@@ -1,5 +1,5 @@
 """
-AI Extractor - Universal AI extraction using OpenAI
+AI Extractor - Universal AI extraction using OpenAI or Anthropic
 
 Supports both:
 - Legacy universal schema extraction
@@ -74,30 +74,52 @@ Replace each placeholder with the actual extracted value, or an empty string if 
 
 class AIExtractor:
     """
-    Universal AI extraction using OpenAI.
-    
+    Universal AI extraction using OpenAI or Anthropic.
+
     Features:
     - Single prompt for all document types
     - Supports both universal schema and custom questions
     - Validates response and retries for missing fields
     - Supports PDF images for visual context
     """
-    
+
     MAX_RETRIES = 2
+    OPENAI_MODEL = "gpt-4o"
+    ANTHROPIC_MODEL = "claude-sonnet-4-6"
+
+    # Keep legacy MODEL attribute pointing at OpenAI default for backward compat
     MODEL = "gpt-4o"
-    
-    def __init__(self, api_key: Optional[str] = None):
+
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        provider: Optional[str] = None,
+        anthropic_api_key: Optional[str] = None,
+    ):
         """
         Initialize AI extractor.
-        
+
         Args:
-            api_key: OpenAI API key. If not provided, uses OPENAI_API_KEY env var.
+            api_key: Primary API key. Used for whichever provider is selected.
+            provider: "openai" or "anthropic". Defaults to AI_PROVIDER env var.
+            anthropic_api_key: Explicit Anthropic key (alternative to passing via api_key).
         """
-        self.api_key = api_key or os.getenv("OPENAI_API_KEY")
-        if not self.api_key:
-            raise ValueError("OpenAI API key not provided. Set OPENAI_API_KEY environment variable.")
-        
-        self.client = OpenAI(api_key=self.api_key)
+        self.provider = provider or os.getenv("AI_PROVIDER", "openai")
+
+        if self.provider == "anthropic":
+            import anthropic as _anthropic
+            key = api_key or anthropic_api_key or os.getenv("ANTHROPIC_API_KEY")
+            if not key:
+                raise ValueError("Anthropic API key not provided. Set ANTHROPIC_API_KEY environment variable.")
+            self.client = _anthropic.Anthropic(api_key=key)
+            self._model = self.ANTHROPIC_MODEL
+        else:
+            key = api_key or os.getenv("OPENAI_API_KEY")
+            if not key:
+                raise ValueError("OpenAI API key not provided. Set OPENAI_API_KEY environment variable.")
+            self.client = OpenAI(api_key=key)
+            self._model = self.OPENAI_MODEL
+
         self.validator = ExtractionValidator()
     
     def extract_with_questions(
@@ -128,9 +150,9 @@ class AIExtractor:
         system_prompt = build_dynamic_prompt(questions)
         
         # Make extraction call - returns result and conversation history for potential follow-up
-        raw_result, conversation_messages = self._call_openai_with_prompt(
-            text_content, 
-            system_prompt, 
+        raw_result, conversation_messages = self._call_ai_with_prompt(
+            text_content,
+            system_prompt,
             reference_images
         )
         
@@ -166,76 +188,115 @@ class AIExtractor:
         
         return raw_result, metadata
     
-    def _call_openai_with_prompt(
+    def _call_ai_with_prompt(
         self,
         text_content: str,
         system_prompt: str,
         reference_images: List[dict] = None
     ) -> Tuple[dict, List[dict]]:
         """
-        Make the OpenAI API call with a custom prompt.
-        
+        Make the AI API call with a custom prompt (OpenAI or Anthropic).
+
         Returns:
             Tuple of (raw extraction result as dictionary, conversation messages for follow-up)
         """
-        # Build message content
-        content = []
-        
-        # Add text content
         intro = "Please analyze the following document and answer the questions.\n\n"
         intro += "DOCUMENT TEXT:\n"
         intro += "=" * 50 + "\n"
         intro += text_content
         intro += "\n" + "=" * 50
-        
+
         if reference_images:
             intro += f"\n\nBelow are {len(reference_images)} page image(s) for visual reference:"
-        
-        content.append({"type": "text", "text": intro})
-        
-        # Add reference images if provided
-        if reference_images:
-            for img in reference_images:
-                content.append({
-                    "type": "image_url",
-                    "image_url": {
-                        "url": f"data:{img['mime_type']};base64,{img['base64_image']}",
-                        "detail": "low"
-                    }
-                })
-        
-        # Build messages list
-        messages = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": content}
-        ]
-        
-        # Make API call
-        response = self.client.chat.completions.create(
-            model=self.MODEL,
-            messages=messages,
-            max_tokens=4000,
-            temperature=0.1,
-            response_format={"type": "json_object"}
-        )
-        
-        # Parse response
-        response_text = response.choices[0].message.content.strip()
-        
-        # Add assistant response to conversation history for potential follow-up
-        messages.append({"role": "assistant", "content": response_text})
-        
-        # Handle markdown code blocks
+
+        if self.provider == "anthropic":
+            # Apply size limits to avoid 413 errors
+            _MAX_CHARS = 80_000
+            _MAX_IMGS = 50
+
+            truncated = text_content[:_MAX_CHARS]
+            if len(text_content) > _MAX_CHARS:
+                truncated += "\n\n[... document truncated for size ...]"
+
+            trunc_intro = "Please analyze the following document and answer the questions.\n\n"
+            trunc_intro += "DOCUMENT TEXT:\n"
+            trunc_intro += "=" * 50 + "\n"
+            trunc_intro += truncated
+            trunc_intro += "\n" + "=" * 50
+            if reference_images:
+                capped = min(len(reference_images), _MAX_IMGS)
+                trunc_intro += f"\n\nBelow are {capped} page image(s) for visual reference:"
+
+            content = [{"type": "text", "text": trunc_intro}]
+            if reference_images:
+                for img in reference_images[:_MAX_IMGS]:
+                    content.append({
+                        "type": "image",
+                        "source": {
+                            "type": "base64",
+                            "media_type": img.get("mime_type", "image/jpeg"),
+                            "data": img["base64_image"]
+                        }
+                    })
+
+            anthropic_system = system_prompt + "\n\nIMPORTANT: Respond with a JSON object only. Do not use markdown code fences."
+            # Store so _retry_extraction_followup can reuse it
+            self._current_system_prompt = anthropic_system
+
+            response = self.client.messages.create(
+                model=self._model,
+                max_tokens=4000,
+                system=anthropic_system,
+                messages=[{"role": "user", "content": content}]
+            )
+            response_text = response.content[0].text.strip()
+
+            # Build conversation history for potential follow-up
+            messages = [
+                {"role": "user", "content": content},
+                {"role": "assistant", "content": response_text}
+            ]
+
+        else:
+            content = [{"type": "text", "text": intro}]
+            if reference_images:
+                for img in reference_images:
+                    content.append({
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:{img['mime_type']};base64,{img['base64_image']}",
+                            "detail": "low"
+                        }
+                    })
+
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": content}
+            ]
+            response = self.client.chat.completions.create(
+                model=self._model,
+                messages=messages,
+                max_tokens=4000,
+                temperature=0.1,
+                response_format={"type": "json_object"}
+            )
+            response_text = response.choices[0].message.content.strip()
+            messages.append({"role": "assistant", "content": response_text})
+
         clean_response = response_text
         if clean_response.startswith("```"):
             lines = clean_response.split("\n")
             clean_response = "\n".join(lines[1:-1])
-        
+
         try:
             return json.loads(clean_response), messages
         except json.JSONDecodeError as e:
             logger.warning(f"Failed to parse AI response as JSON: {e}")
             return {}, messages
+
+    # Keep old name as alias for backward compatibility
+    def _call_openai_with_prompt(self, text_content, system_prompt, reference_images=None):
+        return self._call_ai_with_prompt(text_content, system_prompt, reference_images)
     
     def _retry_extraction_followup(
         self,
@@ -244,44 +305,47 @@ class AIExtractor:
     ) -> dict:
         """
         Retry extraction as a follow-up in the same conversation.
-        
+
         This continues the existing conversation without resending the document/images,
         which is more efficient and provides better context to the AI.
-        
+
         Args:
             conversation_messages: The conversation history from the first call
-                                  (includes system, user with doc/images, and assistant response)
             questions: List of question dicts for missing fields to retry
-            
+
         Returns:
             Dictionary with extracted values for the missing fields
         """
-        # Build a follow-up message asking for the missing fields
         followup_msg = "Some fields in your response were empty. Please look again VERY carefully in the document for the following information:\n\n"
-        
         for q in questions:
             followup_msg += f"- {q.get('question', '')} → field: \"{q.get('column_name', '')}\"\n"
-        
         followup_msg += "\nReturn ONLY these fields as a JSON object. If you truly cannot find the information, return an empty string for that field."
-        
-        # Add the follow-up message to the conversation
+
         messages = conversation_messages + [{"role": "user", "content": followup_msg}]
-        
-        # Make the follow-up API call (no need to resend images - they're in context)
-        response = self.client.chat.completions.create(
-            model=self.MODEL,
-            messages=messages,
-            max_tokens=2000,
-            temperature=0.1,
-            response_format={"type": "json_object"}
-        )
-        
-        response_text = response.choices[0].message.content.strip()
-        
+
+        if self.provider == "anthropic":
+            system = getattr(self, "_current_system_prompt", "You are a document extraction assistant. Return answers as JSON only.")
+            response = self.client.messages.create(
+                model=self._model,
+                max_tokens=2000,
+                system=system,
+                messages=messages
+            )
+            response_text = response.content[0].text.strip()
+        else:
+            response = self.client.chat.completions.create(
+                model=self._model,
+                messages=messages,
+                max_tokens=2000,
+                temperature=0.1,
+                response_format={"type": "json_object"}
+            )
+            response_text = response.choices[0].message.content.strip()
+
         if response_text.startswith("```"):
             lines = response_text.split("\n")
             response_text = "\n".join(lines[1:-1])
-        
+
         try:
             return json.loads(response_text)
         except json.JSONDecodeError:
@@ -335,28 +399,47 @@ If you truly cannot find it, return an empty string.
                 }
             })
         
-        response = self.client.chat.completions.create(
-            model=self.MODEL,
-            messages=[
-                {"role": "system", "content": retry_prompt},
-                {"role": "user", "content": content}
-            ],
-            max_tokens=2000,
-            temperature=0.1,
-            response_format={"type": "json_object"}
-        )
-        
-        response_text = response.choices[0].message.content.strip()
-        
+        if self.provider == "anthropic":
+            anthropic_retry_prompt = retry_prompt + "\n\nReturn answers as a JSON object only."
+            content_anthropic = [{"type": "text", "text": intro}]
+            if reference_images and len(reference_images) > 0:
+                content_anthropic.append({
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": reference_images[0].get("mime_type", "image/jpeg"),
+                        "data": reference_images[0]["base64_image"]
+                    }
+                })
+            response = self.client.messages.create(
+                model=self._model,
+                max_tokens=2000,
+                system=anthropic_retry_prompt,
+                messages=[{"role": "user", "content": content_anthropic}]
+            )
+            response_text = response.content[0].text.strip()
+        else:
+            response = self.client.chat.completions.create(
+                model=self._model,
+                messages=[
+                    {"role": "system", "content": retry_prompt},
+                    {"role": "user", "content": content}
+                ],
+                max_tokens=2000,
+                temperature=0.1,
+                response_format={"type": "json_object"}
+            )
+            response_text = response.choices[0].message.content.strip()
+
         if response_text.startswith("```"):
             lines = response_text.split("\n")
             response_text = "\n".join(lines[1:-1])
-        
+
         try:
             return json.loads(response_text)
         except json.JSONDecodeError:
             return {}
-    
+
     # ========== Legacy methods for backward compatibility ==========
     
     def extract(
@@ -427,7 +510,7 @@ If you truly cannot find it, return an empty string.
         
         # Make API call
         response = self.client.chat.completions.create(
-            model=self.MODEL,
+            model=self._model,
             messages=[
                 {"role": "system", "content": UNIVERSAL_EXTRACTION_PROMPT},
                 {"role": "user", "content": content}
@@ -436,7 +519,7 @@ If you truly cannot find it, return an empty string.
             temperature=0.1,
             response_format={"type": "json_object"}
         )
-        
+
         # Parse response
         response_text = response.choices[0].message.content.strip()
         
@@ -491,7 +574,7 @@ If you truly cannot find it, return an empty string.
             })
         
         response = self.client.chat.completions.create(
-            model=self.MODEL,
+            model=self._model,
             messages=[
                 {"role": "system", "content": "You are extracting specific missing fields from a document. Return only the requested fields as a JSON object."},
                 {"role": "user", "content": content}
@@ -572,18 +655,22 @@ def extract_document(
     api_key: Optional[str] = None,
     questions: Optional[List[dict]] = None,
     process_all_pages: Optional[bool] = None,
-    max_vision_pages: Optional[int] = None
+    max_vision_pages: Optional[int] = None,
+    provider: Optional[str] = None,
+    anthropic_api_key: Optional[str] = None,
 ) -> Tuple[dict, dict]:
     """
     Convenience function to extract data from a document file.
-    
+
     Args:
         file_path: Path to the document (PDF or Excel)
-        api_key: Optional OpenAI API key
+        api_key: API key for the selected provider
         questions: Optional list of custom questions (if None, uses legacy schema)
         process_all_pages: If True, send all PDF pages as images. If None, uses config.
         max_vision_pages: Max pages to process (ignored if process_all_pages is True). If None, uses config.
-        
+        provider: "openai" or "anthropic" (defaults to AI_PROVIDER env var)
+        anthropic_api_key: Explicit Anthropic key (alternative to api_key when provider="anthropic")
+
     Returns:
         Tuple of (extracted data dict, sources/metadata dict)
     """
@@ -605,7 +692,7 @@ def extract_document(
     
     ext = os.path.splitext(file_path)[1].lower()
     
-    extractor = AIExtractor(api_key=api_key)
+    extractor = AIExtractor(api_key=api_key, provider=provider, anthropic_api_key=anthropic_api_key)
     
     if ext == '.pdf':
         # Extract PDF text

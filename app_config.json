@@ -167,5 +167,6 @@
       "question": "List all financial values in the contract including premiums, limits, deductibles, retentions, attachment points, loss ratios, and any other monetary amounts. Include the value, currency, and what it represents.",
       "column_name": "Financial Values"
     }
-  ]
+  ],
+  "ai_provider": "anthropic"
 }
